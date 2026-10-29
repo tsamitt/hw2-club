@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mankato Maker Club | Events and Registration</title>
+</head>
+<body>
+  <header>
+    <h1>Events &amp; Registration</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events &amp; Registration</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="schedule">
+      <h2>Fall 2026 Schedule</h2>
+      <table>
+        <caption>Mankato Maker Club events, fall 2026</caption>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Event</th>
+            <th scope="col">Location</th>
+            <th scope="col">Time</th>
+            <th scope="col">Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nov 3</td>
+            <td>Soldering Basics</td>
+            <td>Maker Lab 101</td>
+            <td>6:00 PM</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Nov 10</td>
+            <td>Intro to 3D Printing</td>
+            <td>Maker Lab 101</td>
+            <td>6:00 PM</td>
+            <td>$5 materials</td>
+          </tr>
+          <tr>
+            <td>Nov 17</td>
+            <td>Campus Repair Cafe</td>
+            <td>Student Union</td>
+            <td>5:30 PM</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td colspan="5">No meeting during Thanksgiving week.</td>
+          </tr>
+          <tr>
+            <td>Dec 1</td>
+            <td>Guest Talk: Robotics in Industry</td>
+            <td>Library Room 210</td>
+            <td>7:00 PM</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Dec 8</td>
+            <td>End-of-Semester Showcase</td>
+            <td>Maker Lab 101</td>
+            <td>6:00 PM</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="register">
+      <h2>Register for an Event</h2>
+      <form method="post">
+        <p>
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="60" pattern="[A-Za-z][A-Za-z .']+" title="Use letters, spaces, periods, or apostrophes only.">
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required maxlength="80">
+        </p>
+        <p>
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 507-555-0123">
+        </p>
+        <p>
+          <label for="eventdate">Event date</label>
+          <input type="date" id="eventdate" name="eventdate" required min="2026-11-03" max="2026-12-08">
+        </p>
+
+        <fieldset>
+          <legend>Membership type</legend>
+          <p>
+            <input type="radio" id="mem-student" name="membership" value="student" required>
+            <label for="mem-student">Student (free)</label>
+          </p>
+          <p>
+            <input type="radio" id="mem-community" name="membership" value="community">
+            <label for="mem-community">Community member ($10)</label>
+          </p>
+          <p>
+            <input type="radio" id="mem-guest" name="membership" value="guest">
+            <label for="mem-guest">Guest (one visit)</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <p>
+            <input type="checkbox" id="int-electronics" name="interests" value="electronics">
+            <label for="int-electronics">Electronics</label>
+          </p>
+          <p>
+            <input type="checkbox" id="int-printing" name="interests" value="3d-printing">
+            <label for="int-printing">3D printing</label>
+          </p>
+          <p>
+            <input type="checkbox" id="int-woodworking" name="interests" value="woodworking">
+            <label for="int-woodworking">Woodworking</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="comments">Comments</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40" maxlength="300"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Register</button>
+          <button type="reset" aria-label="Clear the form">&#10005;</button>
+        </p>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Need Help?</h2>
+      <p>Email <a href="mailto:makers@example.com">makers@example.com</a> or return to the <a href="index.html">home page</a>.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mankato Maker Club. Sources: HTML structure follows MDN Web Docs guidance.</p>
+  </footer>
+</body>
+</html>
